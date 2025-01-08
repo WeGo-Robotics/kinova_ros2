@@ -1,5 +1,4 @@
 # kinova_ros2
-kinova ros2 (python, cpp, moveit)
 
 1. Download Kortex ros2
 
