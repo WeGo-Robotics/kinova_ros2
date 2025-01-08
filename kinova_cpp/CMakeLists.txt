@@ -17,7 +17,6 @@ find_package(trajectory_msgs REQUIRED)
 
 add_executable(gripper_node src/gripper_test.cpp)
 add_executable(home_position src/home.cpp)
-add_executable(joint_node src/joint_test.cpp)
 add_executable(joint_mode_node src/joint_mode.cpp)
 add_executable(twist_node src/twist_test.cpp)
 add_executable(twist_mode_node src/twist_mode.cpp)
@@ -26,7 +25,6 @@ add_executable(zero_position src/zero.cpp)
 
 ament_target_dependencies(gripper_node rclcpp rclcpp_action control_msgs)
 ament_target_dependencies(home_position rclcpp trajectory_msgs)
-ament_target_dependencies(joint_node rclcpp trajectory_msgs)
 ament_target_dependencies(joint_mode_node rclcpp controller_manager_msgs)
 ament_target_dependencies(twist_node rclcpp geometry_msgs)
 ament_target_dependencies(twist_mode_node rclcpp controller_manager_msgs)
@@ -36,7 +34,6 @@ ament_target_dependencies(zero_position rclcpp trajectory_msgs)
 install(TARGETS
   gripper_node
   home_position
-  joint_node
   joint_mode_node
   twist_node
   twist_mode_node

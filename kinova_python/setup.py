@@ -20,7 +20,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'joint_node = kinova_python.joint_test:main',
             'joint_mode_node = kinova_python.joint_mode:main',
 
             'gripper_node = kinova_python.gripper_test:main',

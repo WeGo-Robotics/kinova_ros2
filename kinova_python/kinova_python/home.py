@@ -24,7 +24,7 @@ class JointTrajectoryPublisher(Node):
                             -0.002829342342100638,
                             -1.046814588631844,
                             0.0003549993733075625]
-        point.time_from_start.sec = 2
+        point.time_from_start.sec = 20
         point.time_from_start.nanosec = 0
 
         msg.points.append(point)
